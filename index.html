@@ -4,7 +4,10 @@
 </head>
 <body>
 <div id="main">
-    {{ message }}
+    <template v-for="item in tags">
+        <span v-if="item.tag === 'span'">{{ item.content }}</span>
+        <b v-if="item.tag === 'b'">{{ item.content }}</b>
+    </template>
 </div>
 <script src="./hello.js"></script>
 </body>

@@ -1,7 +1,10 @@
 new Vue({
     el: '#main',
     data: {
-        message: 'Hello, Vue!'
+        tags: [
+            {tag: 'span', content: 'hello'},
+            {tag: 'b', content: 'vue'}
+        ]
     }
 });
 
